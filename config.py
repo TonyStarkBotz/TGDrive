@@ -45,13 +45,13 @@ DATABASE_BACKUP_TIME = int(
 SLEEP_THRESHOLD = int(os.getenv("SLEEP_THRESHOLD", 60))  # Default to 60 seconds
 
 # Domain to auto-ping and keep the website active
-WEBSITE_URL = os.getenv("WEBSITE_URL", None)
+WEBSITE_URL = os.getenv("WEBSITE_URL", https://tg-drive-seven.vercel.app)
 
 
 # For Using TG Drive's Bot Mode
 
 # Main Bot Token for TG Drive's Bot Mode
-MAIN_BOT_TOKEN = os.getenv("MAIN_BOT_TOKEN", "")
+MAIN_BOT_TOKEN = os.getenv("MAIN_BOT_TOKEN", "6570108244:AAESXYU4C_nujDoqv4PYzv1Iz_pidxrRB14")
 if MAIN_BOT_TOKEN.strip() == "":
     MAIN_BOT_TOKEN = None
 
