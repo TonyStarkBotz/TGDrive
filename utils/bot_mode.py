@@ -63,7 +63,7 @@ async def wait_for_response(client: Client, chat_id: int, question: str, timeout
         if chat_id in ACTIVE_CONVERSATIONS:
             del ACTIVE_CONVERSATIONS[chat_id]
 
-@main_bot.on_message(filters.private & filters.text & ~filters.command)
+@main_bot.on_message(filters.private & filters.text & ~filters.command())
 async def handle_response(client: Client, message: Message):
     """
     Handle responses for active conversations
